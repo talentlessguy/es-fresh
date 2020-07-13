@@ -1,0 +1,36 @@
+{
+  "name": "es-fresh",
+  "description": "fresh rewrite in TypeScript with ESM and CommonJS targets",
+  "version": "0.0.1",
+  "repository": "https://github.com/talentlessguy/es-fresh.git",
+  "engines": {
+    "node": ">=13"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "author": "talentlessguy <pilll.PL22@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json",
+    "./": "./"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.22",
+    "rollup": "^2.21.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.9.6"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  }
+}
