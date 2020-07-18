@@ -1,10 +1,10 @@
 {
   "name": "es-fresh",
   "description": "fresh rewrite in TypeScript with ESM and CommonJS targets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "https://github.com/talentlessguy/es-fresh.git",
   "engines": {
-    "node": ">=13"
+    "node": ">=12.x"
   },
   "files": [
     "dist",
