@@ -34,7 +34,7 @@ function isStale(etag: string, noneMatch: string) {
 /**
  * Check freshness of the response using request and response headers.
  */
-export default function fresh(
+export function fresh(
   reqHeaders: IncomingHttpHeaders,
   resHeaders: OutgoingHttpHeaders
 ) {
