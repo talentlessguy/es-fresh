@@ -1,6 +1,6 @@
 {
   "name": "es-fresh",
-  "description": "fresh rewrite in TypeScript with ESM and CommonJS targets",
+  "description": "fresh rewrite in TypeScript with ESM targets",
   "version": "0.0.8",
   "repository": "https://github.com/talentlessguy/es-fresh.git",
   "engines": {
@@ -13,13 +13,12 @@
   "author": "talentlessguy <pilll.PL22@gmail.com>",
   "license": "MIT",
   "type": "module",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/index.js"
     },
     "./package.json": "./package.json",
     "./": "./"
@@ -31,6 +30,6 @@
   },
   "scripts": {
     "prepare": "pnpm build",
-    "build": "tsup src/index.ts --minify-whitespace --format cjs,esm --dts"
+    "build": "tsup src/index.ts --minify-whitespace --format esm --dts"
   }
 }
